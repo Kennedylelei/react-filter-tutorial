@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function Filter({setActiveGenre, activeGenre, setFiltered, popular }){
+function Filter({ setActiveGenre, activeGenre, setFiltered, popular }){
 
     useEffect(() => {
         if (activeGenre === 0) {
