@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Movie from './movie'
 
 function App() {
 
@@ -21,7 +21,11 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <div className="popular-movies">
+        {popular.map(movie => {
+          return <Movie key={movie.id} movie={movie} />;
+        })}
+      </div>
     </div>
   );
 }
